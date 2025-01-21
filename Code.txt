@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            text-indent: 10px;
+        }
+        h2{text-indent: 10px;
+                   
+        }
+        
+        .BTN-1{
+        height: 50px;
+        width: 150px;
+        background-color: orange;
+        color: white;
+        border-radius: 3px;
+        margin-left: 40px;
+        margin-right: 10px;
+        margin-top: 25px;
+        border-color: transparent;
+        
+       }
+       .BTN-2{
+        height: 50px;
+        width: 80px;
+        background-color: transparent;
+        color: rgb(68, 67, 67);
+        border-radius: 3px;
+        border-width: 1px;
+        margin-right: 10px;
+    
+       }
+       .BTN-3{
+        height: 50px;
+        width: 110px;
+        background-color: purple;
+        color: white;
+        font-weight: bold;
+        font-size: large;
+        border-radius: 25px;
+        border-color: transparent;
+       }
+       .note{
+        color: red;
+       }
+       p{
+        margin: 0em;
+       }
+       .P1{
+        color: grey;
+       }
+       .container1{
+        border-style: dashed;
+        width: 450px;
+        
+       }
+       .container2{
+        background-color: grey;
+        height: 100px;
+        width: 460px;
+       }
+
+       </style>
+
+</head>
+<body>
+    <br>
+    <div class="container1">
+    <h2>Historic <span class="note">Mars</span> Landing: First Humans Step on Red Planet&#33;</h2>
+      
+    <p class="P1">2.8M views &#183; 2 hours ago </p>
+    <br>
+    <p class="P1">SpaceXplore&#10003;</p>
+    <br>
+    <p class="P1">Breaking&#58; Our crew has successfully landed on <span class="note">Mars</span>&#33;</p>
+    <p class="P1">First steps taken at Olympus Mons base camp&#46;</p>
+    <p class="P1">Follow our mission updates on <a href="https://www.nasa.gov/" target="_blank">NASA's website&#46;</a></p>
+        <br>
+    </div>
+    
+    <br>
+    <div class="container2">
+    <button class="BTN-1">FOLLOW MISSION</button>
+    <button class="BTN-2">SHARE</button>
+    <button class="BTN-3">DONATE</button>
+    </div>
+    
+</body>
+</html>
