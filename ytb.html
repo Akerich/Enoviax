@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-color: rgb(18, 18, 18);
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .left-bar{
+        background-color: rgb(88, 88, 88);
+        padding: 20px;
+        width: 200px;
+        position: fixed;
+        height: 1000px;
+        left: 0;
+        top: 0;
+    }
+    .search{
+        width: 180px;
+        height: 35px;
+        border-radius: 20px;
+        border: none;
+        padding-left: 15px;
+        background-color: rgb(40, 40, 40);
+        color: white;
+        margin-bottom: 20px;
+    }
+    .left_barbtn{
+        background-color: transparent;
+        border: none;
+        color: rgb(179, 179, 179);
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+
+    .main_cont{
+        margin-left: 220px;
+        padding: 20px;
+    }
+
+    .profile{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    .h1{
+        margin: 0;
+        font-size: 48px;
+    }
+
+    .stats{
+        color: rgb(179, 179, 179);
+        margin-top: 10px;
+    }
+    .img1{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 30px;
+    }
+    .fbtn{
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 20px;
+        font-weight: bold;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .sbtn{
+        height: 50px;
+        width: 120px;
+        border-color: white;
+        background-color: rgb(19, 20, 19);
+        color: white;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .h2tl{
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .playlists1{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+    .tp_playlist{
+        background-color: rgb(24, 24, 24);
+        padding: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .img2{
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        cursor: pointer;
+    }
+    .p3{
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: white;
+        cursor: pointer;
+    }
+    .p4{
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .low_page{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 24px;
+        margin-bottom: 40px;
+        color: white;
+    }
+    .player{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(88, 88, 88);
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .player_btn{
+        background-color: rgb(29, 185, 84);
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    
+</style>
+
+</head>
+<body>
+    
+    
+      <div class="left_bar">
+            <input class="search" type="text" placeholder="search">
+            <button class="left_barbtn">Home</button>
+            <button class="left_barbtn">Your Library</button>
+            <button class="left_barbtn">Create Playlist</button>
+            <button class="left_barbtn">Linked Songs</button>
+        </div>
+
+        <div class="main_cont">
+            <div class="Profile">
+                <img class="img1" src="Images/bike.jpg">
+                <div class="prof_inf">
+                    <p>Profile</p>
+                    <h1>Alexander Kerich</h1>
+                    <div class="stats">
+                        <p>10 Public Playlists &#183; 245 Followers &#183; 168 Following </p>
+                    </div>
+                    <div class="btns">
+                        <button class="fbtn">FOLLOW</button>
+                        <button class="sbtn">SHARE</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="h2tl">Top Playlists</h2>
+            <div class="playlists1">
+                <div class="tp_playlist">
+                    <img class="img2" src="Images/Audi.jpg">
+                    <P class="p3">Chill Vibes</P>
+                    <p class="P4">Perfect for relaxation</p>
+                </div>
+                <div class="tp_playlist">
+                    <img class="img2" src="Images/both.jpg">
+                    <p class="p3">Workout Mix</p>
+                    <p class="P4">Energy boost</p>
+                </div>
+                <div class="tp_playlist">
+                    <img class="img2" src="Images/sandy.jpg">
+                    <p class="p3">Road Trip</p>
+                    <p class="P4">Drive with style</p>
+                </div>
+                <div class="tp_playlist">
+                    <img class="img2" src="Images/car1.jpg">
+                    <p class="p3">Study Session</p>
+                    <p class="P4">Focus and learn</p>
+                </div>
+            </div>
+
+            <h2>Recently Played</h2>
+
+            <div class="low_page">
+                <div class="tp_playlist">
+                    <img class="img2" src="Images/gazoo.jpg">
+                    <p class="p3">Daily Mix 1</p>
+                    <p class="P4">Custom playlist for you</p>
+                </div>
+                <div class="tp_playlist">
+                    <img class="img2" src="Images/i20.jpg">
+                    <p class="p3">Discover Weekly</p>
+                    <p class="P4">New music Monday</p>
+                </div>
+
+            </div>
+            <div class="player">
+                <button class="player_btn">▶</button>
+            </div>
+        </div>
+
+</body>
+</html>
